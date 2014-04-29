@@ -61,3 +61,13 @@ h3#statement {
   position: absolute;
   top: 0;
 }
+
+#shirt {
+  border: 2px solid black;
+  width: 500px;
+  height: 232px;
+  background-repeat: no-repeat;
+  background-image: url('shirt.png');
+  display: inline-block;
+  margin: 24px auto;
+}
