@@ -71,3 +71,11 @@ h3#statement {
   display: inline-block;
   margin: 24px auto;
 }
+
+#contact {
+  background: red;
+  color: blue;
+  display: block;
+  margin: 12px auto;
+  width: 25%;
+}
