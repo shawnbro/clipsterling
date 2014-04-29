@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clip Sterling</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+  <style>
+  @media (max-width: 600px) {
+    div#container {
+      width: 100%;
+    }
+    h1{
+      font-size: 36px;
+    }
+    h3#statement {
+      font-size: 24px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<%= yield %>
+<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+</body>
+</html>

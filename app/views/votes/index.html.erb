@@ -1,0 +1,20 @@
+<div id='container'>
+  <div id='heading'></div>
+  <h1>CLIP STERLING</h1>
+  <div id='sterling'></div>
+  <div id='poll'>
+    <h3 id ='statement'><%= @vote_total %> people think Donald Sterling should give up his ownership of the Los Angeles Clippers...</h3>
+    <h3 id='vote'>+1</h3>
+  </div>
+<!--   <div id='scissor'></div> -->
+</div>
+<script type="text/javascript">
+  $( document ).ready(function() {
+    $("h3#vote").click(function() {
+      $.post("/votes", function( data ) {
+        $('h3#statement').text(data.length + " people think Donald Sterling should give up his ownership of the Los Angeles Clippers...")
+        $("h3#vote").unbind();
+      })
+    })
+  })
+</script>
